@@ -185,7 +185,7 @@ void paint(int i, int j, Mat &out, vector<vector<char>> &visit, vector<vector<do
                     if (fabs(dir) <= 0.01)
                         dir = 0.000001f;
                     dst = 1. / (VectorLength(r) * VectorLength(r));
-                    dst = (float)(1. / (VectorLength(r) * sqrt(VectorLength(r))));
+                    // dst = (float)(1. / (VectorLength(r) * sqrt(VectorLength(r))));
                     lev = (float)(1. / (1 + fabs(t[k][l]) - t[i][j]));
 
                     w = (float)fabs(dst * lev * dir);
